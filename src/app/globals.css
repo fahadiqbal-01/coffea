@@ -1,26 +1,22 @@
 @import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+@theme {
+  --color-primary: #f1f0ee;
+  --color-secondary: #e3d8c8;
+  --color-void: #30261c;
+
+  --font-zodiak: "Zodiak", sans-serif;
+  --font-clash: "Clash", sans-serif;
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+@font-face {
+  font-family: "Zodiak";
+  src: url("/fonts/Zodiak_Complete/Zodiak_Complete/Fonts/OTF/Zodiak-Bold.otf")
+    format("opentype");
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
-}
-
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+@font-face {
+  font-family: "Clash";
+  src: url("/fonts/ClashDisplay_Complete/ClashDisplay_Complete/Fonts/OTF/ClashDisplay-Medium.otf")
+    format("opentype");
 }
