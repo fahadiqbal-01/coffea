@@ -4,9 +4,11 @@
   --color-primary: #f1f0ee;
   --color-secondary: #e3d8c8;
   --color-void: #30261c;
+  --color-moca: #2a0000;
 
   --font-zodiak: "Zodiak", sans-serif;
   --font-clash: "Clash", sans-serif;
+  --font-clashSec: "ClashSec", sans-serif;
 }
 
 @font-face {
@@ -18,5 +20,11 @@
 @font-face {
   font-family: "Clash";
   src: url("/fonts/ClashDisplay_Complete/ClashDisplay_Complete/Fonts/OTF/ClashDisplay-Medium.otf")
+    format("opentype");
+}
+
+@font-face {
+  font-family: "ClashSec";
+  src: url("/fonts/ClashDisplay_Complete/ClashDisplay_Complete/Fonts/OTF/ClashDisplay-Light.otf")
     format("opentype");
 }

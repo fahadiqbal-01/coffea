@@ -1,4 +1,6 @@
+import NavBar from "@/components/navbar";
 import "./globals.css";
+import Footer from "@/components/footer";
 
 export const metadata = {
   title: "Coffea",
@@ -8,7 +10,11 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body>{children}</body>
+      <body className=" overflow-x-hidden " >
+        <NavBar />
+        {children}
+        <Footer />
+      </body>
     </html>
   );
 }
