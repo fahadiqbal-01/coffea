@@ -5,7 +5,7 @@ import { motion } from "framer-motion";
 
 export default function Hero() {
   return (
-    <section className=" w-full ">
+    <section className=" w-full 2xl:h-[90vh] xl:h-[80vh] ">
       <Container className={` pt-24 md:pt-43 pb-32 md:pb-52 `}>
         <motion.h2
           initial={{ opacity: 0, y: 20 }}
@@ -19,7 +19,7 @@ export default function Hero() {
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.2 }}
-          className=" font-zodiak text-white text-[42px] md:text-[72px] leading-tight md:leading-20 max-w-[600px] mt-10 "
+          className=" font-zodiak text-white text-[42px] md:text-[72px] leading-tight md:leading-20 max-w-150 mt-10 "
         >
           We serve the richest coffee in the city!
         </motion.h1>

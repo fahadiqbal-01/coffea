@@ -46,7 +46,7 @@ export default function Coffee() {
       <Varients />
 
       <Container className="py-24">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-y-12 justify-items-center">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-y-12 gap-6 justify-items-center">
           {coffeeItems.map((img, index) => (
             <Coffeecart key={index} src={img} />
           ))}
