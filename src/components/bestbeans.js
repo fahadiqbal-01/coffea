@@ -19,7 +19,7 @@ export default function Bestbeans() {
         whileInView={{ x: 0, opacity: 1 }}
         viewport={{ once: true }}
         transition={{ duration: 1 }}
-        src="images/beansSec.png"
+        src="images/beanssec.png"
         className=" absolute left-0 top-0 w-32 md:w-auto opacity-40 md:opacity-100 "
       />
       <motion.div
