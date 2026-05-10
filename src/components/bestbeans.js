@@ -2,6 +2,7 @@
 import React from "react";
 import { FaAnglesRight } from "react-icons/fa6";
 import { motion } from "framer-motion";
+import Link from "next/link";
 
 export default function Bestbeans() {
   return (
@@ -31,14 +32,17 @@ export default function Bestbeans() {
         <h1 className=" text-[32px] md:text-[40px] leading-tight md:leading-12.5 text-void font-zodiak ">
           Check Out Our Best <br /> Coffee Beans
         </h1>
-        <motion.button
+        <Link href="/shop">
+          <motion.button
           whileHover={{ scale: 1.05 }}
           whileTap={{ scale: 0.95 }}
           className=" text-white text-[16px] font-clashSec px-9.5 py-4 bg-void rounded-full mt-6 flex justify-center items-center gap-1 select-none cursor-pointer "
         >
-          Explore Out Products <FaAnglesRight />
-        </motion.button>
+          Explore Our Products <FaAnglesRight />
+          </motion.button>
+        </Link>
       </motion.div>
     </section>
   );
 }
+
